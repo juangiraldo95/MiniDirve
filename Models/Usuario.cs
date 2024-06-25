@@ -10,10 +10,10 @@ namespace MiniDriveApi.Models
     
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "El campo Nombre del usuario es obligatorio.")]
+      
         public string? Nombres { get; set; }
 
-        [Required(ErrorMessage = "El campo Apellido del usuario es obligatorio.")]
+        
         public string? Apellidos { get; set; }
 
         [Required(ErrorMessage = "El campo Correo del usuario es obligatorio.")]
