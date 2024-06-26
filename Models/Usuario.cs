@@ -19,7 +19,7 @@ namespace MiniDriveApi.Models
         [Required(ErrorMessage = "El campo Correo del usuario es obligatorio.")]
         public string? Correo { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El campo de la contrasena del usuario es obligatorio.")]
         public string? Contrasena { get; set; }
         [JsonIgnore]
         public List<Carpeta>? Carpetas { get; set;}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip4-038/MiniDirve/MiniDriveApi.csproj": {}
+    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {}
   },
   "projects": {
-    "/home/riwip4-038/MiniDirve/MiniDriveApi.csproj": {
+    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip4-038/MiniDirve/MiniDriveApi.csproj",
+        "projectUniqueName": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
         "projectName": "MiniDriveApi",
-        "projectPath": "/home/riwip4-038/MiniDirve/MiniDriveApi.csproj",
-        "packagesPath": "/home/riwip4-038/.nuget/packages/",
-        "outputPath": "/home/riwip4-038/MiniDirve/obj/",
+        "projectPath": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
+        "packagesPath": "/home/riwip5-017/.nuget/packages/",
+        "outputPath": "/home/riwip5-017/Desktop/MiniDirve/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip4-038/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-017/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -66,6 +61,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [
@@ -87,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/riwip4-038/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

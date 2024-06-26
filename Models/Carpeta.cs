@@ -16,7 +16,6 @@ namespace MiniDriveApi.Models
         [Required]
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-        [Required]
         public DateTime FechaModificacion { get; set; } = DateTime.Now;
 
         [Required]

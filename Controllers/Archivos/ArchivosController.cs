@@ -12,7 +12,7 @@ namespace MiniDirve.Controllers
     [Route("api/[controller]")]
     public class ArchivosController : ControllerBase
     {
-         private readonly IArchivoRepository _archivo;
+        private readonly IArchivoRepository _archivo;
 
         public ArchivosController(IArchivoRepository archivo)
         {

@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MiniDriveApi.Data;
 using MiniDriveApi.Models;
 
@@ -20,26 +17,27 @@ namespace MiniDriveApi.Services
             _context.SaveChanges();
         }
 
-        public void AgregarCarpeta(Carpeta carpeta)
+        public void AgregarCarpeta(Carpeta carpetaDto)
         {
-            _context.Add(carpeta);
+            _context.Add(carpetaDto);
             _context.SaveChanges();
         }
 
         public void EliminarCarpeta(int id)
         {
-             _context.Remove(id);
+            _context.Remove(id);
             _context.SaveChanges();
         }
 
         public Carpeta ObtenerCarpetaId(int id)
         {
-             return _context.Carpetas.Find(id);
+            return _context.Carpetas.Find(id);
         }
 
         public IEnumerable<Carpeta> ObtenerCarpetas()
         {
-            return _context.Carpetas.ToList();
+            return _context.Carpetas.Include(u => u.Usuario).ToList();
         }
+
     }
 }

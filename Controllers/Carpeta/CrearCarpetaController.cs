@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MiniDriveApi.Dtos;
 using MiniDriveApi.Models;
 using MiniDriveApi.Services;
 
@@ -20,7 +21,7 @@ namespace MiniDirve.Controllers
         }
 
         [HttpPost]
-        public IActionResult CrearUsuario([FromBody] Carpeta carpeta)
+        public IActionResult CrearCarpeta([FromBody] Carpeta carpeta)
         {
             _carpeta.AgregarCarpeta(carpeta);
             return Ok("Carpeta creada con exito" + carpeta);
