@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using MiniDriveApi.Data;
 using MiniDriveApi.Models;
 
@@ -11,29 +13,34 @@ namespace MiniDriveApi.Services
             _context = context;
         }
 
-        public Usuario AddUsuario(Usuario carpeta)
+        public void AgregarUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Add(usuario);
+            _context.SaveChanges();
         }
 
-        public Usuario DeleteUsuario(int id)
+        public void EliminarUsuario(int id)
         {
-            throw new NotImplementedException();
+            _context.Remove(id);
+            _context.SaveChanges();
         }
 
-        public Usuario GetUsuario(int id)
+        public Usuario ObtenerUsuarioId(int id)
         {
-            throw new NotImplementedException();
+            return _context.Usuarios.Find(id);
         }
 
-        public IEnumerable<Usuario> GetUsuarios()
+        public IEnumerable<Usuario> ObtenerUsuarios()
         {
             return _context.Usuarios.ToList();
         }
 
-        public Usuario UpdateUsuario(Usuario carpeta)
+        public void ActualizarUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Update(usuario);
+            _context.SaveChanges();
         }
+
+
     }
 }

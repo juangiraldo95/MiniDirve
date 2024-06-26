@@ -4,10 +4,10 @@ namespace MiniDriveApi.Services
 {
     public interface IUsuarioRepository
     {
-        IEnumerable<Usuario> GetUsuarios();
-        Usuario GetUsuario(int id);
-        Usuario AddUsuario(Usuario carpeta);
-        Usuario UpdateUsuario(Usuario carpeta);
-        Usuario DeleteUsuario(int id);
+        IEnumerable<Usuario> ObtenerUsuarios();
+        Usuario ObtenerUsuarioId(int id);
+        void AgregarUsuario(Usuario usuario);
+        void ActualizarUsuario(Usuario usuario);
+        void EliminarUsuario(int id);
     }
 }

@@ -42,7 +42,7 @@ builder.Services.AddDbContext<BaseContext>(options =>
 );
 builder.Services.AddScoped<IArchivoRepository, ArchivoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-
+builder.Services.AddScoped<ICarpetaRepository, CarpetaRepository>();
 // Construcción de la aplicación
 var app = builder.Build();
 

@@ -2,35 +2,44 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MiniDriveApi.Data;
 using MiniDriveApi.Models;
 
 namespace MiniDriveApi.Services
 {
     public class CarpetaRepository : ICarpetaRepository
     {
-        public Carpeta AddCarpeta(Carpeta carpeta)
+
+        private readonly BaseContext _context;
+        public CarpetaRepository(BaseContext context){
+            _context = context;
+        }
+        public void ActualizarCarpeta(Carpeta carpeta)
         {
-            throw new NotImplementedException();
+            _context.Update(carpeta);
+            _context.SaveChanges();
         }
 
-        public Carpeta DeleteCarpeta(int id)
+        public void AgregarCarpeta(Carpeta carpeta)
         {
-            throw new NotImplementedException();
+            _context.Add(carpeta);
+            _context.SaveChanges();
         }
 
-        public Carpeta GetCarpeta(int id)
+        public void EliminarCarpeta(int id)
         {
-            throw new NotImplementedException();
+             _context.Remove(id);
+            _context.SaveChanges();
         }
 
-        public IEnumerable<Carpeta> GetCarpetas()
+        public Carpeta ObtenerCarpetaId(int id)
         {
-            throw new NotImplementedException();
+             return _context.Carpetas.Find(id);
         }
 
-        public Carpeta UpdateCarpeta(Carpeta carpeta)
+        public IEnumerable<Carpeta> ObtenerCarpetas()
         {
-            throw new NotImplementedException();
+            return _context.Carpetas.ToList();
         }
     }
 }

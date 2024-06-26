@@ -8,11 +8,11 @@ namespace MiniDriveApi.Services
 {
     public interface IArchivoRepository
     {
-        IEnumerable<Archivo> GetArchivos();
-        Archivo GetArchivo(int id);
-        Archivo AddArchivo(Archivo archivo);
-        Archivo UpdateArchivo(Archivo archivo);
-        Archivo DeleteArchivo(int id);
+        IEnumerable<Archivo> ObtenerArchivos();
+        Archivo ObtenerArchivoId(int id);
+        void AgragarArchivo(Archivo archivo);
+        void ActualizarArchivo(Archivo archivo);
+        void EliminarArchivo(int id);
         
     }
 }

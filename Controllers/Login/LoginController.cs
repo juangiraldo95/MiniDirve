@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using MiniDriveApi.Data;
-using MiniDriveApi.Models;
+using MiniDriveApi.Dtos;
 using Microsoft.EntityFrameworkCore;
 
 [Route("api/[controller]")]
@@ -29,7 +29,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] Usuario login)
+    public async Task<IActionResult> Login([FromBody] UsuarioDto login)
     {
         var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Correo == login.Correo && u.Contrasena == login.Contrasena);
 

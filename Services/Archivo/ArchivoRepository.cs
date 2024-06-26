@@ -2,35 +2,45 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MiniDriveApi.Data;
 using MiniDriveApi.Models;
 
 namespace MiniDriveApi.Services
 {
     public class ArchivoRepository : IArchivoRepository
     {
-        public Archivo AddArchivo(Archivo archivo)
+
+        private readonly BaseContext _context;
+        public ArchivoRepository(BaseContext context){
+            _context = context;
+        }
+        
+        public void ActualizarArchivo(Archivo archivo)
         {
-            throw new NotImplementedException();
+             _context.Update(archivo);
+            _context.SaveChanges();
         }
 
-        public Archivo DeleteArchivo(int id)
+        public void AgragarArchivo(Archivo archivo)
         {
-            throw new NotImplementedException();
+            _context.Add(archivo);
+            _context.SaveChanges();
         }
 
-        public Archivo GetArchivo(int id)
+        public void EliminarArchivo(int id)
         {
-            throw new NotImplementedException();
+            _context.Remove(id);
+            _context.SaveChanges();
         }
 
-        public IEnumerable<Archivo> GetArchivos()
+        public Archivo ObtenerArchivoId(int id)
         {
-            throw new NotImplementedException();
+            return _context.Archivos.Find(id);
         }
 
-        public Archivo UpdateArchivo(Archivo archivo)
+        public IEnumerable<Archivo> ObtenerArchivos()
         {
-            throw new NotImplementedException();
+            return _context.Archivos.ToList();
         }
     }
 }
