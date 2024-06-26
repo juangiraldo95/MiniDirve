@@ -8,10 +8,10 @@ namespace MiniDriveApi.Services
 {
     public interface ICarpetaRepository
     {
-        IEnumerable<Carpeta> GetCarpetas();
-        Carpeta GetCarpeta(int id);
-        Carpeta AddCarpeta(Carpeta carpeta);
-        Carpeta UpdateCarpeta(Carpeta carpeta);
-        Carpeta DeleteCarpeta(int id);
+        IEnumerable<Carpeta> ObtenerCarpetas();
+        Carpeta ObtenerCarpetaId(int id);
+        void AgregarCarpeta(Carpeta carpeta);
+        void ActualizarCarpeta(Carpeta carpeta);
+        void EliminarCarpeta(int id);
     }
 }

@@ -9,7 +9,7 @@ using MiniDriveApi.Services;
 namespace MiniDriveApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+
     public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioRepository _usuario;
@@ -19,8 +19,9 @@ namespace MiniDriveApi.Controllers
             _usuario = usuario;
         }
         [HttpGet]
+        [Route("api/[controller]")]
         public IEnumerable<Usuario> GetUsuarios(){
-            return _usuario.GetUsuarios();
+            return _usuario.ObtenerUsuarios();
         }
     }
 }

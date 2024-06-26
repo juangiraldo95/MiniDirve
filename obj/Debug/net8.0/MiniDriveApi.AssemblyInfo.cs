@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("20f00af7-ffcd-4912-aa0b-e277d86213bb")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebefe047ad4a7d45b1a35181b3e36defd0599bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
