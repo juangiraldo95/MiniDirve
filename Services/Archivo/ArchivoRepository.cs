@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MiniDriveApi.Data;
 using MiniDriveApi.Models;
 
@@ -40,7 +41,7 @@ namespace MiniDriveApi.Services
 
         public IEnumerable<Archivo> ObtenerArchivos()
         {
-            return _context.Archivos.ToList();
+            return _context.Archivos.Include(u => u.Carpeta).ToList();
         }
     }
 }

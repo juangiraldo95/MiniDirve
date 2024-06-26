@@ -19,20 +19,20 @@ namespace MiniDirve.Controllers
         }
 
         [HttpPut]
-        [Route("api/[controller]/{Id}")]
-        public IActionResult ActualizarUsuario(int Id, [FromBody] Usuario usuario)
+        [Route("api/[controller]/{id}")]
+        public IActionResult ActualizarUsuario(int id, [FromBody] Usuario usuario)
         {
 
-            var usuarioExistente = _Usuario.ObtenerUsuarioId(Id);
+            var usuarioExistente = _Usuario.ObtenerUsuarioId(id);
             if (usuario == null)
             {
                 return NotFound();
             }
-            usuario.Id = usuarioExistente.Id;
-            usuario.Nombres = usuarioExistente.Nombres;
-            usuario.Apellidos = usuarioExistente.Apellidos;
-            usuario.Correo = usuarioExistente.Correo;
-            usuario.Contrasena = usuarioExistente.Contrasena;
+            usuarioExistente.Id = usuario.Id;
+            usuarioExistente.Nombres = usuario.Nombres;
+            usuarioExistente.Apellidos = usuario.Apellidos;
+            usuarioExistente.Correo = usuario.Correo;
+            usuarioExistente.Contrasena = usuario.Contrasena;
 
             _Usuario.ActualizarUsuario(usuarioExistente);
             return Ok("Usuario actualizado correctamente");

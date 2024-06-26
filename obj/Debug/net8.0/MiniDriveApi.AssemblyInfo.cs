@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7caa89614aa26bb52fbd7e16baca79f46c86ca34")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e336a79cedc18b20bb0db7663bf0187117d42fd8")]
+>>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
 [assembly: System.Reflection.AssemblyProductAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniDriveApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

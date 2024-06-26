@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/home/riwip5-018/Desktop/MiniDirve/MiniDriveApi.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/riwip5-018/.nuget/NuGet/NuGet.Config"
+=======
+    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {}
+  },
+  "projects": {
+    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
+        "projectName": "MiniDriveApi",
+        "projectPath": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
+        "packagesPath": "/home/riwip5-017/.nuget/packages/",
+        "outputPath": "/home/riwip5-017/Desktop/MiniDirve/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/riwip5-017/.nuget/NuGet/NuGet.Config"
+>>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,6 +78,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [
