@@ -43,6 +43,17 @@ builder.Services.AddDbContext<BaseContext>(options =>
 builder.Services.AddScoped<IArchivoRepository, ArchivoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ICarpetaRepository, CarpetaRepository>();
+
+// Configuración de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder
+            .WithOrigins("http://localhost:5070") // Reemplaza con la URL de tu frontend
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 // Construcción de la aplicación
 var app = builder.Build();
 
@@ -64,6 +75,8 @@ app.UseHttpsRedirection();
 // Middleware de enrutamiento, autenticación y autorización
 app.UseRouting();
 
+app.UseCors("AllowSpecificOrigin");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -72,4 +85,3 @@ app.MapControllers();
 
 // Ejecución de la aplicación
 app.Run();
-
