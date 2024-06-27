@@ -1,37 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "/home/riwip5-018/Desktop/MiniDirve/MiniDriveApi.csproj": {}
+    "/home/riwip5-034/Downloads/proyecminidrive/MiniDirve/MiniDriveApi.csproj": {}
   },
   "projects": {
-    "/home/riwip5-018/Desktop/MiniDirve/MiniDriveApi.csproj": {
+    "/home/riwip5-034/Downloads/proyecminidrive/MiniDirve/MiniDriveApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-018/Desktop/MiniDirve/MiniDriveApi.csproj",
+        "projectUniqueName": "/home/riwip5-034/Downloads/proyecminidrive/MiniDirve/MiniDriveApi.csproj",
         "projectName": "MiniDriveApi",
-        "projectPath": "/home/riwip5-018/Desktop/MiniDirve/MiniDriveApi.csproj",
-        "packagesPath": "/home/riwip5-018/.nuget/packages/",
-        "outputPath": "/home/riwip5-018/Desktop/MiniDirve/obj/",
+        "projectPath": "/home/riwip5-034/Downloads/proyecminidrive/MiniDirve/MiniDriveApi.csproj",
+        "packagesPath": "/home/riwip5-034/.nuget/packages/",
+        "outputPath": "/home/riwip5-034/Downloads/proyecminidrive/MiniDirve/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-018/.nuget/NuGet/NuGet.Config"
-=======
-    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {}
-  },
-  "projects": {
-    "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
-        "projectName": "MiniDriveApi",
-        "projectPath": "/home/riwip5-017/Desktop/MiniDirve/MiniDriveApi.csproj",
-        "packagesPath": "/home/riwip5-017/.nuget/packages/",
-        "outputPath": "/home/riwip5-017/Desktop/MiniDirve/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/riwip5-017/.nuget/NuGet/NuGet.Config"
->>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
+          "/home/riwip5-034/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

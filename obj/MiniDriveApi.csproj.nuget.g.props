@@ -4,22 +4,13 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-<<<<<<< HEAD
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/riwip5-018/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/riwip5-018/.nuget/packages/</NuGetPackageFolders>
-=======
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/riwip5-017/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/riwip5-017/.nuget/packages/</NuGetPackageFolders>
->>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/riwip5-034/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/riwip5-034/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-<<<<<<< HEAD
-    <SourceRoot Include="/home/riwip5-018/.nuget/packages/" />
-=======
-    <SourceRoot Include="/home/riwip5-017/.nuget/packages/" />
->>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
+    <SourceRoot Include="/home/riwip5-034/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.props')" />
@@ -27,10 +18,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore/8.0.6/buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore/8.0.6/buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-<<<<<<< HEAD
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/home/riwip5-018/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
-=======
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/home/riwip5-017/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
->>>>>>> 44a52b3d4485b466c45ad62dc296195ff3809858
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/home/riwip5-034/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
   </PropertyGroup>
 </Project>
